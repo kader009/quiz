@@ -15,7 +15,7 @@ const Question = () => {
     <br />
     <blockquote>
       <h1 className='text-warning fs-3'>What is useRef in react.</h1>
-      <p>useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.</p>
+      <p>useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). <br /> The returned object will persist for the full lifetime of the component.</p>
     </blockquote>
     </div>
   );
