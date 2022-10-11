@@ -3,8 +3,8 @@ import { useLoaderData } from 'react-router-dom';
 import Show from '../Show/Show';
 
 const Home = () => {
-  const Phones = useLoaderData()
-  console.log(Phones.data);
+  const Subjects = useLoaderData()
+  console.log(Subjects.data);
   return (
     <div className='container-fluid '>
 
@@ -13,10 +13,12 @@ const Home = () => {
       <img  style={{width:'100%', height:'300px'}} src="image/header.jpg" alt="" />
       
     </div>
+
+    
     
     
       {
-        Phones.data.map(phone => <Show></Show>)
+        Subjects.data.map(subject => <Show key={subject.id} subject={subject}></Show>)
       }
     
     </div>
