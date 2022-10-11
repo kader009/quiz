@@ -10,10 +10,11 @@ const Header = () => {
       <div className='fw-bold text-warning'>Quizzly Beers</div>
       <nav >
         <Link  to='/home'>Home</Link>
-        <Link  to='/question'>Question</Link>
         <Link  to='/rechart'>Recharts</Link>
+        <Link  to='/question'>Question</Link>
       </nav>
     </header>
+    
     </div>
   );
 };

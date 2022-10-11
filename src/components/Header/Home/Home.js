@@ -3,11 +3,13 @@ import Header from '../Header';
 
 const Home = () => {
   return (
-    <div>
+    <div className='container-fluid'>
       
-      <h1>this is home</h1>
+      <div >
+      <img className='img-fluid' src="image/header.jpg" alt="" />
+    </div>
     </div>
   );
 };
 
-export default Home;<h1>this is home</h1>
+export default Home;

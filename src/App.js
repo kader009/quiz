@@ -15,8 +15,8 @@ function App() {
 
         {path:'/', element: <Home></Home>},
         {path:'/home', element: <Home></Home>},
-        {path:'/question', element: <Question></Question>},
         {path:'/rechart', element: <Rechart></Rechart>},
+        {path:'/question', element: <Question></Question>},
       ] 
     },
     {path:'*', element: <ErrorPage></ErrorPage>}

@@ -4,3 +4,9 @@ nav a{
   font-weight: 600;
   margin-left: 10px;
 }
+.img-fluid{
+  height: 20rem;
+  width: 100%;
+  object-position: center;
+  /* object-fit: cover; */
+}
