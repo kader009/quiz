@@ -6,6 +6,7 @@ import Home from './components/Header/Home/Home';
 import Main from './components/Header/Layout/Main';
 import Question from './components/Header/Question/Question';
 import Rechart from './components/Header/Rechart/Rechart';
+import Subjectdata from './components/Header/Subjectdata/Subjectdata';
 
 
 function App() {
@@ -21,7 +22,13 @@ function App() {
         {path:'/question', element: <Question></Question>},
       ] 
     },
+    {path:'/subject/:subjectId',
     
+    loader: ({params}) => {
+      return fetch(`https://openapi.programming-hero.com/api/quiz/${params.subjectId}`)
+    },
+    
+    element: <Subjectdata></Subjectdata>},
     {path:'*', element: <ErrorPage></ErrorPage>}
   ])
   return (
