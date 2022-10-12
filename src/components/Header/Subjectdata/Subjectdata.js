@@ -4,16 +4,19 @@ import Alldata from '../Alldata/Alldata';
 
 const Subjectdata = () => {
   const Subdata = useLoaderData()
-  // const {questions} = Subdata
-  // console.log(Subdata.data.questions);
+  const name = Subdata.data.name;
+  const quizdata = Subdata.data.questions;
+  
   return (
     <div>
-      
-      {
-        Subdata.data.questions.map(detail => <Alldata key={detail.id} detail={detail}></Alldata>)
-      }
+      <h1 className='text-warning mt-4'>This quiz of: {name}</h1>
+    <div>
 
-    </div>
+      {
+        quizdata.map(detail => <Alldata key={detail.id} detail={detail}></Alldata>)
+      }
+      </div>
+      </div>
   );
 };
 

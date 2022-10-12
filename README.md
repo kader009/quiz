@@ -6,3 +6,4 @@ project description -
 4) set routes for indivisual page from one to another.
 5) change title and own title and use image in header setion.
 6) make dynamic clickable button to show data from what i get a quiz api.
+7) check the right answer with the api and show it in ui with toast.

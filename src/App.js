@@ -14,7 +14,7 @@ function App() {
     {
       path: '/', element: <Main></Main>, children:[
 
-        {path:'/', element: <Home></Home>},
+        {path:'/', loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'), element: <Home></Home>},
         {path:'/home',
         loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
         element: <Home></Home>},
@@ -22,10 +22,10 @@ function App() {
         {path:'/question', element: <Question></Question>},
       ] 
     },
-    {path:'/subject/:subjectId',
+    {path:'/quiz/:Id',
     
     loader: ({params}) => {
-      return fetch(`https://openapi.programming-hero.com/api/quiz/${params.subjectId}`)
+      return fetch(`https://openapi.programming-hero.com/api/quiz/${params.Id}`)
     },
     
     element: <Subjectdata></Subjectdata>},
