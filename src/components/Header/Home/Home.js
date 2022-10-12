@@ -10,14 +10,18 @@ const Home = () => {
 
       
       <div >
+
       <img style={{width:'100%', height: '300px'}} src="image/header.jpg" alt="" />
       
     </div>
 
+    <div>
+
       {
         Subjects.data.map(subject => <Show key={subject.id} subject={subject}></Show>)
       }
-    
+    </div>
+
     </div>
   );
 };
