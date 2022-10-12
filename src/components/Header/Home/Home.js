@@ -4,13 +4,13 @@ import Show from '../Show/Show';
 
 const Home = () => {
   const Subjects = useLoaderData()
-  console.log(Subjects.data);
+  // console.log(Subjects.data);
   return (
     <div className='container-fluid '>
 
       
-      <div className='position-relative'>
-      <img  style={{width:'100%', height:'300px'}} src="image/header.jpg" alt="" />
+      <div >
+      <img style={{width:'100%', height: '300px'}} src="image/header.jpg" alt="" />
       
     </div>
 

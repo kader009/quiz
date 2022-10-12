@@ -4,10 +4,16 @@ const Alldata = ({detail}) => {
   const {question, option} = detail;
   return (
     <div className='d-flex'>
+
+      
       <div>
 
       <h1>{question}</h1>
-      <p>{option}</p>
+      
+      </div>
+      <div>
+        <input type="checkbox" name="" id="" />
+        {option}
       </div>
     </div>
   );
