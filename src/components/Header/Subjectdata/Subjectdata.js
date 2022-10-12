@@ -5,7 +5,7 @@ import Alldata from '../Alldata/Alldata';
 const Subjectdata = () => {
   const Subdata = useLoaderData()
   // const {questions} = Subdata
-  console.log(Subdata.data.questions);
+  // console.log(Subdata.data.questions);
   return (
     <div>
       

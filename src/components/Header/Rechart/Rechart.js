@@ -29,7 +29,7 @@ const Rechart = () => {
     <div>
       <h1 className='text-warning mt-4 fw-bold'>Rechart of data -</h1>
 
-      <div className='ms-5 ps-5'>
+      <div className='ms-5 mt-5 mb-5'>
         <LineChart width={500} height={600} data={data}>
           <XAxis dataKey="name"></XAxis>
           <YAxis></YAxis>

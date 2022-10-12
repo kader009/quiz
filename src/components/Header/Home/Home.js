@@ -15,6 +15,7 @@ const Home = () => {
       
     </div>
 
+    
     <div>
 
       {
@@ -23,6 +24,8 @@ const Home = () => {
     </div>
 
     </div>
+
+    
   );
 };
 
